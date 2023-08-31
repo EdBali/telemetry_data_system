@@ -62,7 +62,6 @@ It then transforms and loads the data into the four tables of the `iot` keyspace
 Take the following steps:
 
 * Clone the repository: `git clone repo-link`
-* Make sure the current working directory is `./sensor_project`
 * Build the docker image: `docker build . -t sensor-cassandra-image`
 * Create docker container: `docker run -v ./cassandra_data:/usr/src/app -it --name sensor-cassandra-container sensor-cassandra-image:latest /bin/bash`
 * You will be taken to the terminal of the docker container. From there you can now run the pipeline
